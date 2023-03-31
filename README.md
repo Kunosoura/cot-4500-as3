@@ -14,5 +14,7 @@ python.exe src\main\assignment_3.py
 Results were verified to match the expected output
 
 o.txt is the assignment solutions provided
+
 out.txt is the output of the program
+
 check.bat was used to compile/run/check differences
