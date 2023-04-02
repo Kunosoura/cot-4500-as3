@@ -55,7 +55,7 @@ def Det_L_U(matrixU):
   matrixL = np.identity(len(matrixU))
   matrixU = matrixU.astype(float)
 
-  print(np.linalg.det(matrixU), end = "\n\n")
+  print("%.5f" % np.linalg.det(matrixU), end = "\n\n")
 
   # check if algorithm is applicable
   for i in range(1, len(matrixU)+1):
@@ -103,14 +103,14 @@ def Pos_Def(matrix):
 # not sure if this is needed for this assignment, but anway
 np.set_printoptions(precision=7, suppress=True, linewidth=100)
 
-print(Euler_Method("t - y**2", 0, 2, 10, 1), end = "\n\n")
+print("%.5f" % Euler_Method("t - y**2", 0, 2, 10, 1), end = "\n\n")
 
-print(Runge_Kutta("t - y**2", 0, 2, 10, 1), end = "\n\n")
+print("%.5f" % Runge_Kutta("t - y**2", 0, 2, 10, 1), end = "\n\n")
 
 print(Gaussian_Elimination(np.array(
     [[ 2,-1, 1, 6],
      [ 1, 3, 1, 0],
-     [-1, 5, 4,-3]])).astype(int), end = "\n\n")
+     [-1, 5, 4,-3]])), end = "\n\n")
 
 Det_L_U(np.array(
     [[ 1, 1, 0, 3],
